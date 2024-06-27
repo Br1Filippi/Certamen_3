@@ -11,23 +11,25 @@
         <div class="row">
             <div class="col-md-20">
                 <div class="card mt-5">
+                    
                     <div class="card-header text-center">
                         <strong>Bienvenido!</strong>
                     </div>
+
                     <div class="card-body">
                         <form method="POST" action="{{ route('usuarios.autenticar') }}">
                             @csrf
                             {{-- Email here  --}}
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo Electronico</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" value="{{ old('email') }}">
                             </div>
                             {{-- /*Email here  --}}
 
                             {{-- Password Here  --}}
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contrasenia (No tengo enie)</label>
-                                <input type="password" class="form-control" id="password">
+                                <input type="password" class="form-control" name="password" id="password">
                             </div>
                             {{-- /*Password Here  --}}
 

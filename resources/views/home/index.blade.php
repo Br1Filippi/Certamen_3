@@ -1,9 +1,7 @@
-@extends('templates.master')
+@extends('templates.master');
 
-@section('contenido-pagina')
-{{-- card opciones navegación --}}
-<div class="row mt-3">
-
-</div>
-{{-- /card opciones navegación --}}
+@section('contenido-principal')
+    <div>
+        <h1>Hola Mundo</h1>
+    </div>
 @endsection

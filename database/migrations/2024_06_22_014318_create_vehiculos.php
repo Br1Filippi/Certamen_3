@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('valor_diario');
             $table->boolean('arrendado');
+            $table->string('estado');
             $table->unsignedBigInteger('tipo_id');
             $table->foreign('tipo_id')->references('id')->on('tipos');
 
